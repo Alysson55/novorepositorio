@@ -1,66 +1,26 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Logica & Passo a Passo de como construir o meu script.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1- criar a pasta do projeto dentro do xampp no meu pc
+2- criar o projeto atraves do terminal git bash com o botao direito criando o projeto do composer e laravel
+3- abrir o projeto com code.
+4- no arquivo env. é importante salientar que usuarios windows so alteram 2 campos que é DB_CONNECTION=(banco usado)
+e o DB_DATABASE=(nome que a pessoa criou).
+5- rodar o php artisan no terminal bash para o artisan funcionar
+6- criar o controller no caso do teste foi o CadastroController
+7- criar o model Cadastros
+8 - fazer o migrate pro banco de dados da tabela e os dados pedidos no teste
+9- protectec fillabe so insere aquele tipo de dado por exemplo id =  so é inserido o id pra identificar o usuario assim como "primeiro nome" so entra o primeiro nome da pessoa ao inves do nome completo por exemplo
+10- @csrf-> é um token utilizado pelo laravel para autenticar se um usuario é o mesmo que ta usando autenticado dentro da aplicaçao
+11- migration criada
+12- crias as blades 
+13- criei as controllers
+14- criei uma blade onde tem os dados como nome cpf nome do pai e da mae pra depois as funçoes na controller chamarem
+15- na primeira public function que eu criei vale salientar o creat é: o que o usuario vai requisitar atraves da rota ja que pelo que eu defini nas rotas web.php é cadastro/create ou seja la no navegador no final do endereco coloco/create vai criar um cadastro pra min assim como é o update pra atualizar dados dentro do banco
+e nessa public function tem os campos que o banco de dados vai precisar 
+16 - os dois pontos duplos :: ou operador de escopo é o que da acesso a uma classe na funçao
+17- double mustache ou chaves duplas-> é usado pra exibir dados que eu to chamando como por exemplo de alguma funçao ou variavel $var
+18- dar o php artisan serve pra obter o endereco da web.
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Algumas observaçoes:
+Eu sou um dev em começo de carreira so tive uma unica experiencia como desenvolvedor e nao trabalhei com laravel, tudo que eu aprendi a respeito da framework foi em um curso que eu fiz em Janeiro desse ano no qual eu tirei minha primeira certificaçao e como mencionado no teste abaixo nao importa se atendeu a todos os requisitos faça o seu melhor e foi isso que eu tentei fazer e acabei a Meia noite de sabado para domingo e eu me baseei em exemplos que eu ja tinha feito no meu proprio curso em que construimos aplicaçoes utilizando banco de dados e eu fiz muita coisa baseada no que eu sabia, olhando os exemplos e no pouco que eu aprendi claro eu estou aprendendo e acredito que na empresa com o suporte do squad e com a supervisao da equipe eu consiga evoluir mais na minha carreira e quero fazer carreira em back-end em php/laravel.
+Desde Ja o obrigado a todos que olharem e avaliarem o teste pela oportunidade de fazer esse processo seletivo.
